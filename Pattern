@@ -1,0 +1,54 @@
+public class Pattern 
+{
+	   
+	   public static void main(String[] args) 
+	   {  
+		   int row;
+		   int col;
+		   int space = 0;
+	   
+		   System.out.println("\nPattern A\n");
+	       
+	       	for(row=0; row < 10; row++)
+	       	{
+	       		for( col=0; col <= row; col++)
+	       		{
+	              System.out.println("*");
+	       		}
+	       	System.out.println();
+	       	}   
+	       
+	       System.out.println("\nPattern B\n");
+	           
+	       		for(row=0; row < 10; row++)
+	           {
+	        	   for(col=10; col > row; col--)
+	        	   {
+	        		   System.out.println("*");
+	        	   }	
+	           System.out.println();
+	           }
+	      
+	       System.out.println("\nPattern C\n");       
+	      		
+	      		for(row=0; row <10; row++)
+	            {
+	               for( space = 9 ; space > 0 ; space--)
+	               {
+	                   System.out.println("*");
+	               }    
+	                   System.out.println();
+	            }
+	      		
+	     System.out.println("\nPattern D\n");
+	           
+	          for(row=10; space < row; space++)
+	          {
+	             for( space = 10; space < row; space++)
+	               {
+	            	 System.out.print("*");
+	               }
+	              System.out.println();
+	           }	           
+	   }
+}
